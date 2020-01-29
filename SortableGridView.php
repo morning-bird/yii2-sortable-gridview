@@ -34,6 +34,13 @@ class SortableGridView extends GridView {
      */
     public $failText = 'Fail to sort';
 
+    /**
+     * (optional) Fade transition for modal
+     *
+     * @var string
+     */
+    public $fadeEffect = true;
+
     public function init(){
         parent::init();
 
@@ -83,6 +90,7 @@ class SortableGridView extends GridView {
             'action' => $this->sortUrl,
             'sortingPromptText' => $this->sortingPromptText,
             'sortingFailText' => $this->failText,
+            'fadeEffect' => $this->fadeEffect,
             'csrfTokenName' => \Yii::$app->request->csrfParam,
             'csrfToken' => \Yii::$app->request->csrfToken,
         ];
