@@ -3,7 +3,8 @@
 	var defaultOptions = {
 	    id: 'sortable-grid-view',
 	    action: 'sortItem',
-	    sortingPromptText: 'Loading...',
+		sortingPromptText: 'Loading...',
+		fadeEffect: true,
 	    sortingFailText: 'Fail to sort',
 	    csrfTokenName: '',
 	    csrfToken: '',
@@ -11,7 +12,7 @@
 
 	$.extend({}, defaultOptions, options);
 
-	$('body').append('<div class="modal fade" id="' + options.id + '-sorting-modal" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-body">' + options.sortingPromptText + '</div></div></div></div>');
+	$('body').append('<div class="modal '+ (options.fadeEffect ? 'fade' : '') +'" id="' + options.id + '-sorting-modal" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-body">' + options.sortingPromptText + '</div></div></div></div>');
 
 	var regex = /items\[\]\_(\d+)/;
 
@@ -52,7 +53,7 @@
 				    'type': 'post',
 				    'data': { 'items': data, [options.csrfTokenName] : options.csrfToken },
 				    success: function(data){
-					                   checkSuccess(currentRecordNo);
+						$('#' + options.id + '-sorting-modal').modal('hide');
 				    },
 				    error: function(data){
 					$('#' + options.id + '-sorting-modal').modal('hide');
