@@ -1,6 +1,6 @@
 <?php
 
-namespace richardfan\sortable;
+namespace morningbird\sortable;
 
 use Closure;
 
