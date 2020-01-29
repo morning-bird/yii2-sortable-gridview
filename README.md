@@ -1,9 +1,9 @@
 # yii2-sortable-gridview
 
-[![Latest Stable Version](https://poser.pugx.org/richardfan1126/yii2-sortable-gridview/v/stable)](https://packagist.org/packages/richardfan1126/yii2-sortable-gridview)
-[![Total Downloads](https://poser.pugx.org/richardfan1126/yii2-sortable-gridview/downloads)](https://packagist.org/packages/richardfan1126/yii2-sortable-gridview)
-[![GitHub stars](https://img.shields.io/github/stars/richardfan1126/yii2-sortable-gridview.svg)](https://github.com/richardfan1126/yii2-sortable-gridview/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/richardfan1126/yii2-sortable-gridview.svg)](https://github.com/richardfan1126/yii2-sortable-gridview/issues)
+[![Latest Stable Version](https://poser.pugx.org/morning-bird/yii2-sortable-gridview/v/stable)](https://packagist.org/packages/morning-bird/yii2-sortable-gridview)
+[![Total Downloads](https://poser.pugx.org/morning-bird/yii2-sortable-gridview/downloads)](https://packagist.org/packages/morning-bird/yii2-sortable-gridview)
+[![GitHub stars](https://img.shields.io/github/stars/morning-bird/yii2-sortable-gridview.svg)](https://github.com/morning-bird/yii2-sortable-gridview/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/morning-bird/yii2-sortable-gridview.svg)](https://github.com/morning-bird/yii2-sortable-gridview/issues)
 
 This is an extension of Yii2 GridView.
 
@@ -13,15 +13,15 @@ This extension render a sortable GridView which you can drag and drop the record
 ### Installing
 Install with Composer:
 
-    composer require richardfan1126/yii2-sortable-gridview "*"
+    composer require morning-bird/yii2-sortable-gridview "*"
 
 or
 
-    php composer.phar require richardfan1126/yii2-sortable-gridview "*"
+    php composer.phar require morning-bird/yii2-sortable-gridview "*"
 
 or add
 
-    "richardfan1126/yii2-sortable-gridview":"*"
+    "morning-bird/yii2-sortable-gridview":"*"
 to the require section of your composer.json file.
 
 ### Setting up SortableAction
