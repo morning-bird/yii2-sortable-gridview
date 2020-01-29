@@ -4,6 +4,10 @@
 	"type" : "yii2-extension",
 	"license" : "MIT",
 	"authors" : [{
+			"name" : "Richard Fan",
+			"email" : "richardfan1126@gmail.com",
+			"homepage" : "https://fancy-digital.com"
+		},{
 			"name" : "Renato Budiman",
 			"email" : "renato.budiman07@gmail.com"
 		}
@@ -15,7 +19,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"richardfan\\sortable\\" : ""
+			"morningbird\\sortable\\" : ""
 		}
 	},
 	"keywords" : [
